@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Image Hyperlink Example</title>
 </head>
 <body>
-
+<p>Click following link</p>
+<a href="https://www.tutorialspoint.com" target="_self">
+    <img alt="Tutorials Point" border="0" src="Images/logo.png"/>
+</a>
+<hr/>
+<!--Server-Side Image Maps-->
+<!--ISMAP Hyperlink Example-->
+<p>Click following link</p>
+<a href="/cgi-bin/ismap.cgi" target="_self">
+    <img alt="Tutorials Point" border="0" ismap src="Images/logo.png"/>
+</a>
+<hr/>
+<!--Client-Side Image Maps-->
+<!--USEMAP Hyperlink Example-->
+<p>Search and click the hotspot</p>
+<img alt="HTML Map" border="0" src=Images/html.gif usemap="#html"/>
+<!-- Create  Mappings -->
+<map name="html">
+    <area alt="CSS Link" coords="80,80,20"
+          href="/css/index.htm" shape="circle" target="_self"/>
+    <area alt="jQuery Link" coords="5,5,40,40" href="/jquery/index.htm"
+          shape="rect" target="_self"/>
+    <area alt="jQuery Link" coords="20,20,40,40,20,60,0,40" href="/jquery/index.htm"
+          shape="poly" target="_self"/>
+</map>
 </body>
 </html>
