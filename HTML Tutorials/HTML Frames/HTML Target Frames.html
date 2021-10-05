@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Target Frames</title>
 </head>
-<body>
 
-</body>
+<frameset cols="200, *">
+    <frame name="menu_page" src="menu.htm"/>
+    <frame name="main_page" src="main.htm"/>
+    <noframes>
+        <body>Your browser does not support frames.</body>
+    </noframes>
+</frameset>
 </html>
