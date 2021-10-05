@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Frames</title>
 </head>
-<body>
-
-</body>
+<!--horizontal frames-->
+<frameset border="1" rows="10%,80%,10%">
+    <frame name="top" src="/html/top_frame.htm"/>
+    <frame name="main" src="/html/main_frame.htm"/>
+    <frame name="bottom" src="/html/bottom_frame.htm"/>
+    <noframes>
+        <body>Your browser does not support frames.</body>
+    </noframes>
+</frameset>
+<!--vertical frames-->
+<frameset cols="25%,50%,25%">
+    <frame name="left" src="/html/top_frame.htm"/>
+    <frame name="center" src="/html/main_frame.htm"/>
+    <frame name="right" src="/html/bottom_frame.htm"/>
+    <noframes>
+        <body>Your browser does not support frames.</body>
+    </noframes>
+</frameset>
 </html>
