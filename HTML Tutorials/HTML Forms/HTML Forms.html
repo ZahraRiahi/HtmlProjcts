@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML Forms</title>
 </head>
 <body>
-
+<form>
+    <!--Single-line text input controls-->
+    First name: <input maxlength="20" name="first_name" type="text" value="Please Enter First name" width="200"/>
+    <br>
+    Last name: <input maxlength="50" name="last_name" type="text" value="Please Enter Last name" width="200"/>
+    <hr/>
+    <!--Password input controls-->
+    User ID : <input maxlength="50" name="user_id" type="text" value="Please Enter User ID" width="200"/>
+    <br>
+    Password: <input maxlength="50" name="password" type="password" value="Please Enter Password" width="200"/>
+    <hr/>
+    <!--Multiple-Line Text Input Controls-->
+    Description : <br/>
+    <textarea cols="50" name="description" rows="5">
+            Enter description here...
+         </textarea>
+    <hr/>
+    <!--Checkbox Control-->
+    <input checked name="maths" type="checkbox" value="on"> Maths
+    <input name="physics" type="checkbox" value="on"> Physics
+    <hr/>
+    <!--Radio Button Control-->
+    <input name="subject" type="radio" value="maths"> Maths
+    <input checked name="subject" type="radio" value="physics"> Physics
+    <hr/>
+    <!--Select Box Control-->
+    <select name="dropdown">
+        <option selected value="Maths">Maths</option>
+        <option value="Physics">Physics</option>
+    </select>
+    <hr/>
+    <select multiple name="dropdown" size="20">
+        <option label="Math" selected value="Maths">Maths</option>
+        <option value="Physics">Physics</option>
+    </select>
+    <hr/>
+    <!--File Upload Box-->
+    <input accept="image/*" name="fileupload" type="file"/>
+    <hr/>
+    <!--Button Controls-->
+    <input name="submit" type="submit" value="Submit"/>
+    <input name="reset" type="reset" value="Reset"/>
+    <input name="ok" type="button" value="OK"/>
+    <input name="imagebutton" src="images/test.png" type="image"/>
+    <hr/>
+    <!--Hidden Form Controls-->
+    <p>This is page 10</p>
+    <input name="pagename" type="hidden" value="10"/>
+    <input name="submit" type="submit" value="Submit"/>
+    <input name="reset" type="reset" value="Reset"/>
+</form>
 </body>
 </html>
