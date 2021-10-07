@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!--title tag-->
+    <title>HTML Title Tag Example</title>
+    <!--base tag-->
+    <base href="https://www.tutorialspoint.com/"/>
+    <!--link Tag-->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!--style tag-->
+    <style type="text/css">
+        .myclass {
+            background-color: #aaa;
+            padding: 10px;
+        }
+    </style>
+    <!--script Tag-->
+    <script type="text/JavaScript">
+        function Hello() {
+            alert("Hello, World");
+        }
+    </script>
+    <!--meta tag-->
+    <!-- Provide list of keywords -->
+    <meta content="C, C++, Java, PHP, Perl, Python" name="keywords">
+    <!-- Provide description of the page -->
+    <meta content="Simply Easy Learning by Tutorials Point" name="description">
+    <!-- Author information -->
+    <meta content="Tutorials Point" name="author">
+    <!-- Page content type -->
+    <meta content="text/html; charset = UTF-8" http-equiv="content-type">
+    <!-- Page refreshing delay -->
+    <meta content="30" http-equiv="refresh">
+    <!-- Page expiry -->
+    <meta content="Wed, 21 June 2006 14:25:27 GMT" http-equiv="expires">
+    <!-- Tag to tell robots not to index the content of a page -->
+    <meta content="noindex, nofollow" name="robots">
 </head>
 <body>
-
+<!--title tag-->
+<p>Hello, World!</p>
+<hr/>
+<!--base tag-->
+<img alt="Logo Image" src="/images/logo.png"/>
+<a href="/html/index.htm" title="HTML Tutorial"/>HTML Tutorial</a>
+<hr/>
+<!--style tag-->
+<p class="myclass">Hello, World!</p>
+<hr/>
+<!--script Tag-->
+<input name="ok" onclick="Hello();" type="button" value="OK"/>
+</body>
 </body>
 </html>
