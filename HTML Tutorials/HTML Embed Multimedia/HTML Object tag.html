@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Object tag</title>
+</head>
+<body>
+<!--embed an HTML document in an HTML document-->
+<object data="data/test.htm" height="200" type="text/html" width="300">
+    alt : <a href="data/test.htm">test.htm</a>
+</object>
+<!--embed a PDF document in an HTML document -->
+<object data="data/test.pdf" height="200" type="application/pdf" width="300">
+    alt : <a href="data/test.pdf">test.htm</a>
+</object>
+<!--specify some parameters related to the document with the <param> tag-embed a wav file -->
+<object data="data/test.wav" height="20" type="audio/x-wav" width="200">
+    <param name="src" value="data/test.wav">
+    <param name="autoplay" value="false">
+    <param name="autoStart" value="0">
+    alt : <a href="data/test.wav">test.wav</a>
+</object>
+<!--add a flash document -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="someplace/swflash.cab"
+        height="300" id="penguin" width="200">
+
+    <param name="movie" value="flash/penguin.swf"/>
+    <param name="quality" value="high"/>
+    <img alt="Penguin" height="300" src="penguin.jpg" width="200"/>
+</object>
+<!--add a java applet into HTML document -->
+<object classid="clsid:8ad9c840-044e-11d1-b3e9-00805f499d93"
+        height="200" width="200">
+    <param name="code" value="applet.class">
+</object>
+
+
+</body>
+</html>
