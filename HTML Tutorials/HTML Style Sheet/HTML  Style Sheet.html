@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML CSS</title>
-</head>
+    <!--HTML External CSS-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <!--Internal Style Sheet-->
+    <style type="text/css">
+        .blue {
+            color: blue;
+        }
 
+        .thick {
+            font-size: 30px;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+    </style>
+</head>
 <body>
+<!--without CSS-->
 <p><font color="green" size="5">Hello, World!</font></p>
 <hr/>
+<!--with CSS-->
 <p style="color:green; font-size:24px;">Hello, World!</p>
 <hr/>
 <!--HTML External CSS-->
@@ -16,7 +33,16 @@
 <p class="green">This is green</p>
 <p class="thick green">This is thick and green</p>
 <hr/>
-<!--HTML External CSS-->
-
+<!--Internal Style Sheet-->
+<p class="blue">This is blue</p>
+<p class="thick">This is thick</p>
+<p class="yellow">This is yellow</p>
+<p class="thick yellow">This is thick and green</p>
+<hr/>
+<!--Inline Style Sheet-->
+<p style="color:aqua;">This is aqua</p>
+<p style="font-size:20px;">This is thick</p>
+<p style="color:maroon;">This is maroon</p>
+<p style="color:maroon;font-size:20px;">This is thick and maroon</p>
 </body>
 </html>
