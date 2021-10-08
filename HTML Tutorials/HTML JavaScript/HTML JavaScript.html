@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Javascript External Script</title>
+    <!--Default Scripting Language-->
+    <meta content="text/JavaScript" http-equiv="Content-Script-Type"/>
+    <!--Internal JavaScript-->
+    <script type="text/JavaScript">
+        function Hello() {
+            alert("Hello, World");
+        }
+    </script>
+    <!--External JavaScript-->
+    <script src="Scripts/script.js" type="text/javascript"></script>
+    <!--Event Handlers-->
+    <script type="text/JavaScript">
+        function EventHandler() {
+            alert("I'm event handler!!");
+        }
+    </script>
+    <!--Hide Scripts from Older Browsers-->
+    <script type="text/JavaScript">
+        <!--
+        document.write("Hello JavaScript!");
+        //-->
+    </script>
+    <!--The <noscript> Element-->
+    <noscript>Your browser does not support JavaScript!</noscript>
 </head>
 <body>
-
+<!--External JavaScript-->
+<input name="ok" onclick="Hello();" type="button" value="Click Me"/>
+<hr/>
+<!--Internal JavaScript-->
+<input name="ok" onclick="Hello();" type="button" value="Click Me"/>
+<hr/>
+<!--Event Handlers-->
+<p onmouseover="EventHandler();">Bring your mouse here to see an alert</p>
 </body>
 </html>
